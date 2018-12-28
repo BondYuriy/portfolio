@@ -1,0 +1,17 @@
+.skills,
+.works {
+  height: 100vh;
+  position: relative;
+
+  & h2 {
+    font-family: $Lato;
+    font-size: 210px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $section-title-color;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

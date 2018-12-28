@@ -1,0 +1,34 @@
+* {
+  transition: 0.5s;
+}
+
+body {
+  font-family: $Roboto;
+  font-weight: $light;
+  font-size: $font-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

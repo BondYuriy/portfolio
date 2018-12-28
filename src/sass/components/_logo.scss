@@ -1,0 +1,37 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  & a {
+    display: block;
+    width: 46px;
+    height: 44px;
+    color: $text-color;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid $react;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+
+  & .logo-text {
+    color: $text-color;
+    font-family: $Lato;
+    font-weight: $Regular;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+
+    & .title {
+      display: block;
+      font-size: 20px;
+      font-weight: $Regular;
+      line-height: 26px;
+    }
+
+    & .text {
+      font-size: 16px;
+      font-weight: $light;
+      line-height: 22px;
+    }
+  }
+}

@@ -1,12 +1,14 @@
 /* Colors */
 
+$white: #fff;
 $white-text: #fff;
 $react: #00d8ff;
 $no-active: #6d6b6e;
 $active: #e0edf0;
 $text-color: #e0edf0;
-$section-title-color: #282c34;
-$background: #20232a;
+$section-title-color: rgba(74, 144, 226, 0.05);
+$background: rgba(32, 35, 42, 1);
+$btn-text-color: #9c9c9c;
 
 /* Fonts */
 
@@ -20,8 +22,8 @@ $Medium: 700;
 /*title*/
 
 $h1: 29px;
-$h2: 28px;
-$h3: 21px;
+$h2: 26px;
+$h3: 20px;
 $h4: 18px;
 $h5: 15px;
 // $h6: 14px;

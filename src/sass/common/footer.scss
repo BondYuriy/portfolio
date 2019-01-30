@@ -1,0 +1,206 @@
+.footer {
+  background-color: #080808;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1017px;
+    height: 661px;
+    background-image: url("../img/footer-bi.png");
+    position: absolute;
+    right: 0;
+  }
+}
+
+.contact {
+  padding: 145px 0 25px 0;
+
+  & h2 {
+    color: $text-color;
+    font-family: $Lato;
+    font-size: $h2;
+    font-weight: $Regular;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+
+  & .contact-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+    & .contact-box__img {
+      flex: 0 0 140px;
+      height: 140px;
+      margin-right: 50px;
+
+      & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    & .contact-box__info {
+      flex: 0 0 44%;
+
+      & ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        & li {
+          flex: 0 0 50%;
+          margin-bottom: 40px;
+          color: $no-active;
+
+          &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+          }
+
+          &::before {
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 30px;
+            border: 1px solid $react;
+            vertical-align: middle;
+            margin-right: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &:hover {
+              border: 1px solid $white;
+            }
+          }
+
+          &:hover {
+            color: $active;
+
+            &::before {
+              border: 1px solid $white;
+            }
+          }
+        }
+
+        & .fa-email::before {
+          background-image: url("../img/001-email.svg");
+        }
+
+        & .fa-telegram::before {
+          background-image: url("../img/002-telegram.svg");
+        }
+
+        & .fa-mobile::before {
+          background-image: url("../img/003-soccer.svg");
+        }
+
+        & .fa-skype::before {
+          background-image: url("../img/004-skype.svg");
+        }
+      }
+    }
+  }
+
+  & form {
+    & .form-name,
+    .form-email {
+      margin: 0;
+      width: 25%;
+      margin-right: 50px;
+
+      & input {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #979797;
+        background: rgba(0, 0, 0, 0);
+        color: $active;
+        outline: none;
+
+        &:hover {
+          border-bottom: 1px solid $react;
+        }
+      }
+    }
+
+    & .form-messege {
+      margin: 0;
+      display: block;
+      margin-top: 35px;
+      width: 95%;
+
+      & textarea {
+        border: 0;
+        resize: none;
+        outline: none;
+        width: 100%;
+        border-bottom: 1px solid #979797;
+        background: rgba(0, 0, 0, 0);
+        color: $active;
+
+        &:hover {
+          border-bottom: 1px solid $react;
+        }
+      }
+    }
+
+    & .form-name,
+    .form-email,
+    .form-messege {
+      position: relative;
+      padding-left: 30px;
+
+      &::before {
+        display: inline-block;
+        content: "";
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    & .form-name::before {
+      width: 15px;
+      height: 24px;
+      background-image: url("../img/003-user.svg");
+      bottom: -6px;
+    }
+
+    & .form-email::before {
+      width: 21px;
+      height: 24px;
+      background-image: url("../img/002-email.svg");
+      left: -5px;
+      bottom: -8px;
+    }
+
+    & .form-messege::before {
+      width: 19px;
+      height: 17px;
+      background-image: url("../img/001-chat.svg");
+      bottom: 7px;
+    }
+
+    & .btn {
+      display: block;
+      width: 166px;
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+
+  & .social {
+    flex: 0 0 33.3%;
+  }
+
+  & p {
+    flex: 0 0 33.3%;
+    text-align: center;
+  }
+}

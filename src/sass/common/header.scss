@@ -5,7 +5,7 @@
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 10000;
+  z-index: 10;
   background: linear-gradient(
     180deg,
     rgba(18, 27, 44, 1) 0%,
@@ -214,12 +214,6 @@
       color: $react;
     }
   }
-
-  // body.sticky-header {
-  //   .header {
-  //     background-color: rgba(255, 255, 255, 0.8);
-  //   }
-  // }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

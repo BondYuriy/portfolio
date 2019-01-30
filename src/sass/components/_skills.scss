@@ -1,0 +1,94 @@
+.skills {
+  background-image: linear-gradient(247deg, #030303 0%, #1e1d1d 100%);
+  padding: 145px 0 90px 0;
+
+  & .skills-description {
+    margin-bottom: 60px;
+
+    & h2 {
+      color: $text-color;
+      font-family: $Lato;
+      font-size: $h2;
+      font-weight: $Regular;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+    }
+
+    & p span {
+      color: $react;
+    }
+  }
+
+  & .skills-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+
+    & .skills-item {
+      flex: 0 0 29%;
+      overflow: hidden;
+
+      & .skills-item-title {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  & .skills-list-2 {
+    display: flex;
+    align-items: center;
+
+    & .skills-item-title {
+      flex: 0 0 20%;
+    }
+  }
+}
+
+.skills-item-icon {
+  & ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & li {
+      height: 50px;
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & img {
+        display: block;
+        height: 50px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.skills-item-title {
+  display: flex;
+  align-items: center;
+
+  & .item-title-icon {
+    flex: 0 0 54px;
+    height: 54px;
+    border: 2px solid $react;
+    font-family: $Roboto;
+    color: $white-text;
+    font-size: 22px;
+    font-weight: $light;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 35px;
+  }
+
+  & h4 {
+    color: $text-color;
+    font-family: $Lato;
+    font-size: $h4;
+    font-weight: $Regular;
+  }
+}

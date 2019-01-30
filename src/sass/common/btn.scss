@@ -1,15 +1,21 @@
 .btn {
+  border-radius: 0;
+  height: 45px;
+  padding: 11px;
   display: inline-block;
   position: relative;
-  cursor: pointer;
+  background-color: rgba(38, 37, 37, 0.5);
+
+  &:focus {
+    box-shadow: none;
+  }
 
   & span {
     display: block;
-    color: $text-color;
+    color: $btn-text-color;
     font-family: $Lato;
     font-size: $font-text;
     font-weight: $Regular;
-    text-transform: uppercase;
   }
 }
 
@@ -75,4 +81,8 @@ span::after {
 .btn:hover span::before,
 .btn:hover span::after {
   top: 0;
+}
+
+.btn span:hover {
+  color: $text-color;
 }

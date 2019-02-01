@@ -245,7 +245,9 @@
                             aria-controls="pills-home"
                             aria-selected="true"
                           >
-                            <img src="img/desc.svg" alt="">
+                            <svg>
+                              <use href="img/sprite-tabs.svg#icon-display" />
+                            </svg>
                           </a>
                         </li>
                         <li class="nav-item">
@@ -258,7 +260,9 @@
                             aria-controls="pills-profile"
                             aria-selected="false"
                           >
-                          <img src="img/tab.svg" alt="">
+                            <svg>
+                              <use href="img/sprite-tabs.svg#icon-tablet" />
+                            </svg>
                           </a>
                         </li>
                         <li class="nav-item">
@@ -271,7 +275,9 @@
                             aria-controls="pills-contact"
                             aria-selected="false"
                           >
-                          <img src="img/mob.svg" alt="">
+                            <svg>
+                              <use href="img/sprite-tabs.svg#icon-mobile" />
+                            </svg>
                           </a>
                         </li>
                       </ul>
@@ -283,7 +289,7 @@
                           aria-labelledby="pills-home-tab"
                         >
                           <div class="desc-img">
-                            <img src="img/monitor1.png" alt="">
+                            <img src="img/laptop.png" alt="" />
                           </div>
                           <div class="shadow-desc"></div>
                         </div>
@@ -293,7 +299,10 @@
                           role="tabpanel"
                           aria-labelledby="pills-profile-tab"
                         >
-                          ...
+                        <div class="tab-img">
+                          <img src="img/tablet.png" alt="" />
+                        </div>
+                        <div class="shadow-tab"></div>
                         </div>
                         <div
                           class="tab-pane fade"
@@ -301,7 +310,10 @@
                           role="tabpanel"
                           aria-labelledby="pills-contact-tab"
                         >
-                          ...
+                        <div class="mob-img">
+                          <img src="img/phone.png" alt="" />
+                        </div>
+                        <div class="shadow-mob"></div>
                         </div>
                       </div>
                     </div>

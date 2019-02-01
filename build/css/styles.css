@@ -6281,7 +6281,7 @@ a.text-dark:focus {
 	padding-top: 50px;
 }
 
-* {
+* :not(g):not(svg) {
 	transition: 0.5s;
 }
 
@@ -6667,7 +6667,7 @@ span::after {
 }
 
 .contact .contact-box .contact-box__info ul .fa-telegram::before {
-	background-image: url("../img/002-telegram.svg");
+	background-image: url("../../img/telegram.svg");
 }
 
 .contact .contact-box .contact-box__info ul .fa-mobile::before {
@@ -6675,7 +6675,7 @@ span::after {
 }
 
 .contact .contact-box .contact-box__info ul .fa-skype::before {
-	background-image: url("../img/004-skype.svg");
+	background-image: url("../../img/skype.svg");
 }
 
 .contact form .form-name,
@@ -6877,7 +6877,7 @@ span::after {
 
 .works {
 	background-color: #080808;
-	padding: 145px 0 90px 0;
+	padding: 100px 0 90px 0;
 }
 
 .works h2 {
@@ -6886,18 +6886,18 @@ span::after {
 	font-size: 26px;
 	font-weight: 400;
 	text-transform: uppercase;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 .works-item {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	height: 500px;
+	height: 520px;
 }
 
 .works-item .works-description {
-	flex: 0 0 55%;
+	flex: 0 0 50%;
 }
 
 .works-item .works-description h3 {
@@ -6921,12 +6921,12 @@ span::after {
 }
 
 .works-item .works-gallery {
-	flex: 0 0 45%;
+	flex: 0 0 50%;
 }
 
 .works-item .works-gallery .nav-pills {
 	justify-content: center;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 .works-item .works-gallery .nav-pills .nav-item {
@@ -6939,34 +6939,53 @@ span::after {
 
 .works-item .works-gallery .nav-pills .nav-item .nav-link {
 	padding: 0;
-	width: 53px;
+	border-radius: 0;
+	width: 52px;
 	height: 52px;
 	background-color: rgba(0, 123, 255, 0);
+	border: 2px solid #e0edf0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.works-item .works-gallery .nav-pills .nav-item .nav-link img {
+.works-item .works-gallery .nav-pills .nav-item .nav-link svg {
 	display: block;
-	width: 100%;
-	height: 100%;
+	width: 32px;
+	height: auto;
+	fill: #e0edf0;
+}
+
+.works-item .works-gallery .nav-pills .nav-item .active {
+	border: 2px solid #00d8ff;
+}
+
+.works-item .works-gallery .nav-pills .nav-item .active svg {
+	fill: #00d8ff;
 }
 
 .works-item .works-gallery .tab-content {
 	position: relative;
 }
 
-.works-item .works-gallery .tab-content .tab-pane .desc-img {
-	height: 290px;
+.works-item .works-gallery .tab-content .tab-pane .desc-img,
+.works-item .works-gallery .tab-content .tab-pane .tab-img,
+.works-item .works-gallery .tab-content .tab-pane .mob-img {
+	height: 320px;
 }
 
-.works-item .works-gallery .tab-content .tab-pane .desc-img img {
+.works-item .works-gallery .tab-content .tab-pane .desc-img img,
+.works-item .works-gallery .tab-content .tab-pane .tab-img img,
+.works-item .works-gallery .tab-content .tab-pane .mob-img img {
 	display: block;
 	height: 100%;
 	width: auto;
+	margin: auto;
 }
 
-.works-item .works-gallery .tab-content .tab-pane .shadow-desc {
-	width: 356px;
-	height: 26px;
+.works-item .works-gallery .tab-content .tab-pane .shadow-desc,
+.works-item .works-gallery .tab-content .tab-pane .shadow-tab,
+.works-item .works-gallery .tab-content .tab-pane .shadow-mob {
 	border-radius: 50%;
 	background-color: rgba(26, 25, 25, 0.6);
 	box-shadow: 0px 0px 60px 40px rgba(189, 219, 253, 0.4);
@@ -6977,9 +6996,23 @@ span::after {
 	bottom: -50px;
 }
 
+.works-item .works-gallery .tab-content .tab-pane .shadow-desc {
+	width: 400px;
+	height: 26px;
+}
+
+.works-item .works-gallery .tab-content .tab-pane .shadow-tab {
+	width: 350px;
+	height: 10px;
+}
+
+.works-item .works-gallery .tab-content .tab-pane .shadow-mob {
+	width: 150px;
+	height: 10px;
+}
+
 .works-item .btn {
 	flex: 0 0 170px;
-	margin: 50px auto 0 auto;
 }
 
 .owl-carousel {
@@ -6993,24 +7026,27 @@ span::after {
 
 .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next {
-	width: 17px;
+	width: 22px;
 	height: 44px;
-	background-image: url("../img/left-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	fill: #e0edf0;
 	position: absolute;
 }
 
 .owl-carousel .owl-nav .owl-next {
+	background-image: url("../img/next.svg");
 	right: -40px;
-	top: 50%;
+	top: 40%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-	-webkit-transform: rotatey(180deg);
-	transform: rotatey(180deg);
 }
 
 .owl-carousel .owl-nav .owl-prev {
+	background-image: url("../img/prev.svg");
 	left: -40px;
-	top: 50%;
+	top: 40%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }

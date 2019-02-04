@@ -46,7 +46,7 @@
                           <a class="nav-link" href="#">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                          <a class="btn" href="#"><span>SAY HELLO</span></a>
+                          <a class="btn" href="#" data-toggle="modal" data-target="#exampleModalCenter"><span>SAY HELLO</span></a>
                         </li>
                       </ul>
                     </div>
@@ -63,7 +63,13 @@
           <div class="row">
             <div class="col-12">
               <div class="header-article">
-                <h1>Hello, <span>I am</span>Yuriy Bondar_</h1>
+                <div class="middle">
+                  <h1 class="text-type-animation">
+                    <span class="txt-rotate" data-period="2000" data-rotate="[ &quot;Hello, I am Yuriy Bondar&quot;, &quot;I am Front-end Developer&quot;]"></span>
+                  </h1>
+                </div>
+
+                <!-- <h1>Hello, I am Yuriy Bondar> -->
                 <p>
                   Lorem ipsum do lor sit amet, consectetur adipiscing elit.
                   Donec commodo pellentesque est, ut sollicitudin dolor auctor
@@ -245,16 +251,16 @@
                           <div class="shadow-desc"></div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="tab-img">
-                          <img src="img/tablet.png" alt="">
-                        </div>
-                        <div class="shadow-tab"></div>
+                          <div class="tab-img">
+                            <img src="img/tablet.png" alt="">
+                          </div>
+                          <div class="shadow-tab"></div>
                         </div>
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="mob-img">
-                          <img src="img/phone.png" alt="">
-                        </div>
-                        <div class="shadow-mob"></div>
+                          <div class="mob-img">
+                            <img src="img/phone.png" alt="">
+                          </div>
+                          <div class="shadow-mob"></div>
                         </div>
                       </div>
                     </div>
@@ -339,6 +345,32 @@
           </div>
         </div>
       </footer>
+
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Modal title
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/tether.min.js"></script>

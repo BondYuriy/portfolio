@@ -6847,15 +6847,15 @@ form .btn {
 }
 
 .contact .contact-box .contact-box__info ul .fa-telegram::before {
-	background-image: url("../../img/telegram.svg");
+	background-image: url("../img/telegram.svg");
 }
 
 .contact .contact-box .contact-box__info ul .fa-mobile::before {
-	background-image: url("../../img/soccer.svg");
+	background-image: url("../img/soccer.svg");
 }
 
 .contact .contact-box .contact-box__info ul .fa-skype::before {
-	background-image: url("../../img/skype.svg");
+	background-image: url("../img/skype.svg");
 }
 
 .copyright {

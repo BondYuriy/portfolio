@@ -28,12 +28,12 @@
   & .contact-box {
     display: flex;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 
     & .contact-box__img {
-      flex: 0 0 140px;
-      height: 140px;
-      margin-right: 50px;
+      flex: 0 0 220px;
+      height: auto;
+      margin-right: 20px;
 
       & img {
         display: block;
@@ -92,100 +92,13 @@
         }
 
         & .fa-mobile::before {
-          background-image: url("../img/003-soccer.svg");
+          background-image: url("../../img/soccer.svg");
         }
 
         & .fa-skype::before {
           background-image: url("../../img/skype.svg");
         }
       }
-    }
-  }
-
-  & form {
-    & .form-name,
-    .form-email {
-      margin: 0;
-      width: 25%;
-      margin-right: 50px;
-
-      & input {
-        width: 100%;
-        border: 0;
-        border-bottom: 1px solid #979797;
-        background: rgba(0, 0, 0, 0);
-        color: $active;
-        outline: none;
-
-        &:hover {
-          border-bottom: 1px solid $react;
-        }
-      }
-    }
-
-    & .form-messege {
-      margin: 0;
-      display: block;
-      margin-top: 35px;
-      width: 95%;
-
-      & textarea {
-        border: 0;
-        resize: none;
-        outline: none;
-        width: 100%;
-        border-bottom: 1px solid #979797;
-        background: rgba(0, 0, 0, 0);
-        color: $active;
-
-        &:hover {
-          border-bottom: 1px solid $react;
-        }
-      }
-    }
-
-    & .form-name,
-    .form-email,
-    .form-messege {
-      position: relative;
-      padding-left: 30px;
-
-      &::before {
-        display: inline-block;
-        content: "";
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 0;
-      }
-    }
-
-    & .form-name::before {
-      width: 15px;
-      height: 24px;
-      background-image: url("../img/003-user.svg");
-      bottom: -6px;
-    }
-
-    & .form-email::before {
-      width: 21px;
-      height: 24px;
-      background-image: url("../img/002-email.svg");
-      left: -5px;
-      bottom: -8px;
-    }
-
-    & .form-messege::before {
-      width: 19px;
-      height: 17px;
-      background-image: url("../img/001-chat.svg");
-      bottom: 7px;
-    }
-
-    & .btn {
-      display: block;
-      width: 166px;
-      margin: auto;
-      margin-top: 30px;
     }
   }
 }

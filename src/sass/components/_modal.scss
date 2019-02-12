@@ -1,0 +1,83 @@
+.modal {
+  & .modal-dialog-centered {
+    width: 540px;
+    height: 418px;
+  }
+
+  & .modal-dialog {
+    & .modal-content {
+      width: 540px;
+      height: 418px;
+      background-color: #161616;
+      padding: 20px 0 40px 0;
+
+      & .modal-header {
+        border: 0;
+        width: 80%;
+        margin: auto;
+
+        & h5 {
+          color: $text-color;
+          font-family: $Roboto;
+          font-size: 14px;
+          font-weight: $light;
+          text-align: center;
+        }
+
+        & .close {
+          padding: 0;
+          text-shadow: none;
+          display: block;
+          width: 21px;
+          height: 21px;
+          border-radius: 50%;
+          background-color: $react;
+          color: #393232;
+          font-family: $Lato;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 21px;
+          text-align: center;
+          opacity: 1;
+          position: absolute;
+          right: 7px;
+          top: 5px;
+        }
+
+        & span {
+          display: block;
+          width: 21px;
+          height: 21px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    & .modal-body {
+      width: 80%;
+      margin: auto;
+
+      & form {
+        & label {
+          margin: 0;
+          width: 100%;
+        }
+
+        & .form-name,
+        .form-tel {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    & .modal-footer {
+      border: 0;
+      padding: 0;
+
+      & .btn {
+        width: 166px;
+        margin: auto;
+      }
+    }
+  }
+}

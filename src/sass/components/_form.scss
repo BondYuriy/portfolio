@@ -1,0 +1,96 @@
+form {
+  & .form-name,
+  .form-email,
+  .form-tel {
+    margin: 0;
+    width: 25%;
+    margin-right: 50px;
+
+    & input {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #979797;
+      background: rgba(0, 0, 0, 0);
+      color: $active;
+      outline: none;
+
+      &:focus {
+        border-bottom: 1px solid $react;
+      }
+    }
+  }
+
+  & .form-messege {
+    margin: 0;
+    display: block;
+    margin-top: 35px;
+    width: 95%;
+
+    & textarea {
+      border: 0;
+      resize: none;
+      outline: none;
+      width: 100%;
+      border-bottom: 1px solid #979797;
+      background: rgba(0, 0, 0, 0);
+      color: $active;
+
+      &:focus {
+        border-bottom: 1px solid $react;
+      }
+    }
+  }
+
+  & .form-name,
+  .form-email,
+  .form-messege,
+  .form-tel {
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  & .form-name::before {
+    width: 19px;
+    height: 24px;
+    background-image: url("../img/003-user.svg");
+    bottom: 0px;
+  }
+
+  & .form-email::before {
+    width: 25px;
+    height: 20px;
+    background-image: url("../img/002-email.svg");
+    left: -5px;
+    bottom: 0;
+  }
+
+  & .form-messege::before {
+    width: 26px;
+    height: 24px;
+    background-image: url("../img/001-chat.svg");
+    bottom: 5px;
+  }
+
+  & .form-tel::before {
+    width: 16px;
+    height: 26px;
+    background-image: url("../img/003-soccer.svg");
+    bottom: 0;
+  }
+
+  & .btn {
+    display: block;
+    width: 166px;
+    margin: auto;
+    margin-top: 30px;
+  }
+}

@@ -98,7 +98,7 @@
                   ac. Aenean lacinia nec orci et placerat. Mauris blandit urna a
                   nulla semper rutrum.
                 </p>
-                <a class="btn" href="#"><span>View portfolio</span></a>
+                <a class="btn" href="#works"><span>View portfolio</span></a>
               </div>
             </div>
           </div>
@@ -220,7 +220,7 @@
           </div>
         </div>
       </section>
-      <section class="works">
+      <section class="works" id="works">
         <div class="title">works</div>
         <div class="container">
           <div class="row">
@@ -361,7 +361,7 @@
                 <h2>CONTACT ME</h2>
                 <div class="contact-box">
                   <div class="contact-box__img">
-                    <img src="img/photo.jpg" alt="foto Yuriy Bondar" />
+                    <img src="img/foto-bondar.png" alt="foto Yuriy Bondar" />
                   </div>
                   <div class="contact-box__info">
                     <ul>
@@ -374,9 +374,9 @@
                 </div>
                 <form action="#">
                   <label class="form-name" for="name">
-                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Name" id="name"/>
                   </label>
-                  <label class="form-email" for="email">
+                  <label class="form-email" for="email" id="email">
                     <input type="email" placeholder="E-mail" /><br />
                   </label>
                   <label class="form-messege" for="messege">
@@ -440,7 +440,8 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalCenterTitle">
-                Modal title
+                Lorem ipsum do lor sit amet, consectetur adipiscing elit. Donec
+                commodo pellentesque est
               </h5>
               <button
                 type="button"
@@ -448,22 +449,30 @@
                 data-dismiss="modal"
                 aria-label="Close"
               >
-                <span aria-hidden="true">&times;</span>
+                <span aria-hidden="true"> X</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
+              <form action="#">
+                <label class="form-name" for="name-modal">
+                  <input type="text" placeholder="Name" id="name-modal"/>
+                </label>
+                <label class="form-tel" for="name-tel">
+                  <input type="text" placeholder="+ 38 (088) 888-88-88 " id="name-tel"/>
+                </label>
+                <label class="form-messege" for="messege-modal">
+                  <textarea
+                    id="messege-modal"
+                    cols="30"
+                    rows="1"
+                    placeholder="Messege"
+                  ></textarea>
+                </label>
+              </form>
             </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
+              <button type="button" class="btn">
+                <span>Send</span>
               </button>
             </div>
           </div>

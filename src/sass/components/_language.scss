@@ -1,0 +1,34 @@
+.language ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & li {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      color: $no-active;
+      text-align: center;
+      line-height: 30px;
+      font-size: 18px;
+      font-weight: 700;
+
+      &:hover {
+        background-color: $react;
+        color: #000;
+      }
+    }
+
+    & .active {
+      background-color: $no-active;
+      color: #000;
+    }
+  }
+}

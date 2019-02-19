@@ -4,10 +4,9 @@
     <title>Bondar Developer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   </head>
 
   <body>
@@ -32,18 +31,18 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                       <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">HELLO
+                          <a class="nav-link link-hello" href="#hello">HELLO
                             <!-- <span class="sr-only">(current)</span> -->
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">TECH SKILLS</a>
+                          <a class="nav-link link-skills" href="#skills">TECH SKILLS</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">WORKS</a>
+                          <a class="nav-link link-works" href="#works">WORKS</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">CONTACT</a>
+                          <a class="nav-link link-contact" href="#contact">CONTACT</a>
                         </li>
                         <li class="nav-item">
                           <a class="btn" href="#" data-toggle="modal" data-target="#exampleModalCenter"><span>SAY HELLO</span></a>
@@ -58,7 +57,7 @@
         </div>
       </header>
 
-      <div class="wrapper-header">
+      <div class="wrapper-header" id="hello">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -68,8 +67,6 @@
                     <span class="txt-rotate" data-period="2000" data-rotate="[ &quot;Hello, I am Yuriy Bondar&quot;, &quot;I am Front-end Developer&quot;]"></span>
                   </h1>
                 </div>
-
-                <!-- <h1>Hello, I am Yuriy Bondar> -->
                 <p>
                   Lorem ipsum do lor sit amet, consectetur adipiscing elit.
                   Donec commodo pellentesque est, ut sollicitudin dolor auctor
@@ -85,23 +82,31 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <div class="social">
-                  <ul>
-                    <li>
-                      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/yuriy-bondar-235a98160/" target="_blank">
-                        <svg>
-                          <use href="img/sprite-social.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="fa fa-github" href="https://github.com/BondYuriy" target="_blank">
-                        <svg>
-                          <use href="img/sprite-social.svg#icon-github"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+                <div class="section-footer-box">
+                  <div class="social">
+                    <ul>
+                      <li>
+                        <a class="fa fa-linkedin" href="https://www.linkedin.com/in/yuriy-bondar-235a98160/" target="_blank">
+                          <svg>
+                            <use href="img/sprite-social.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fa fa-github" href="https://github.com/BondYuriy" target="_blank">
+                          <svg>
+                            <use href="img/sprite-social.svg#icon-github"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="language">
+                    <ul>
+                      <li><a class="active" href="#">EN</a></li>
+                      <li><a href="#">RU</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -109,7 +114,7 @@
         </div>
       </div>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="title">skills</div>
         <div class="container">
           <div class="row">
@@ -200,7 +205,7 @@
                 <div class="item">
                   <div class="works-item">
                     <div class="works-description">
-                      <h3>SITE PORTFOLIO OLGA KARTASHOVA</h3>
+                      <h3>News site QHA media</h3>
                       <article class="article">
                         <h4>Сoncept</h4>
                         <p>
@@ -212,11 +217,11 @@
                       </article>
                       <article class="article">
                         <h4>Programming languages</h4>
-                        <p>html, css, javascript</p>
+                        <p>HTML5, CSS3, javascript</p>
                       </article>
                       <article class="article">
                         <h4>Technology</h4>
-                        <p>Webpack / Gulp JSON, AJAX, RESTful API, Jest</p>
+                        <p>Gulp, bootstrap 4, sass, jquery, avocode, GitHub</p>
                       </article>
                     </div>
                     <div class="works-gallery">
@@ -248,11 +253,17 @@
                           <div class="desc-img">
                             <img src="img/laptop.png" alt="">
                           </div>
+                          <div class="desc-img_works">
+                            <img src="img/qha-desk.jpg" alt="">
+                          </div>
                           <div class="shadow-desc"></div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                           <div class="tab-img">
                             <img src="img/tablet.png" alt="">
+                          </div>
+                          <div class="tab-img_works">
+                            <img src="img/qha-tab.jpg" alt="">
                           </div>
                           <div class="shadow-tab"></div>
                         </div>
@@ -260,11 +271,14 @@
                           <div class="mob-img">
                             <img src="img/phone.png" alt="">
                           </div>
+                          <div class="mob-img_works">
+                            <img src="img/qha-mob.jpg" alt="">
+                          </div>
                           <div class="shadow-mob"></div>
                         </div>
                       </div>
                     </div>
-                    <a class="btn" href="#"><span>View web-site</span></a>
+                    <a class="btn" href="https://qha.com.ua/" target="_blanck"><span>View web-site</span></a>
                   </div>
                 </div>
                 <div class="item"><h4>2</h4></div>
@@ -284,7 +298,7 @@
         </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer" id="contact">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -339,12 +353,26 @@
                     </li>
                   </ul>
                 </div>
-                <p>Yuriy Bondar</p>
+                <p>© Yuriy Bondar</p>
+                <div class="language">
+                  <ul>
+                    <li><a class="active" href="#">EN</a></li>
+                    <li><a href="#">RU</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </footer>
+
+      <a id="toTop" href="#hello">
+        <div class="to-top">
+          <svg>
+            <use href="img/sprite-up.svg#icon-up-arrow"></use>
+          </svg>
+        </div>
+      </a>
 
       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -382,7 +410,6 @@
     </div>
 
     <script src="js/tether.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/jquery.cookie.min.js"></script>
     <script src="js/wow.min.js"></script>

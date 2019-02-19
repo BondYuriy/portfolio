@@ -68,12 +68,8 @@
             }
 
             &:hover {
-              outline: none;
-              position: relative;
-
-              &:after {
-                width: 40px;
-              }
+              font-size: 15px;
+              line-height: 21px;
             }
           }
 

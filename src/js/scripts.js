@@ -9,6 +9,8 @@ $(function() {
   });
 });
 
+//==================================================
+
 $(".works-slider").owlCarousel({
   loop: true,
   margin: 0,
@@ -80,3 +82,134 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #00d8ff }";
   document.body.appendChild(css);
 };
+
+//==================================================
+
+//Default active on home
+$(".link-hello").addClass("active");
+
+/*
+Smooth scrolling
+*/
+$(".link-hello").click(function() {
+  $("html, body").animate(
+    {
+      scrollTop: $("#hello").offset().top - 0
+    },
+    700
+  );
+  return false;
+});
+
+$(".link-skills").click(function() {
+  $("html, body").animate(
+    {
+      scrollTop: $("#skills").offset().top - 0
+    },
+    700
+  );
+  return false;
+});
+
+$(".link-works").click(function() {
+  $("html, body").animate(
+    {
+      scrollTop: $("#works").offset().top - 0
+    },
+    700
+  );
+  return false;
+});
+
+$(".link-contact").click(function() {
+  $(this).addClass("active");
+  $("html, body").animate(
+    {
+      scrollTop: $("#contact").offset().top - 0
+    },
+    700
+  );
+  return false;
+});
+
+/*$('#2').waypoint(function(event, direction) {
+
+  $(".nav-container ul li").children().removeClass("active");
+  $("#s2").addClass("active");
+
+  if (direction === 'down') {
+    offset = 90;
+  }
+  else {
+    offset = 20;
+  }
+});*/
+
+/*
+Using jquery waypoints to change active on scroll
+*/
+$("#skills").waypoint(
+  function() {
+    $(".navbar-nav .nav-item")
+      .children()
+      .removeClass("active");
+    $(".link-skills").addClass("active");
+  },
+  { offset: 0 }
+);
+
+$("#works").waypoint(
+  function() {
+    $(".navbar-nav .nav-item")
+      .children()
+      .removeClass("active");
+    $(".link-works").addClass("active");
+  },
+  { offset: 0 }
+);
+
+$("#contact").waypoint(
+  function() {
+    $(".navbar-nav .nav-item")
+      .children()
+      .removeClass("active");
+    $(".link-contact").addClass("active");
+  },
+  { offset: 0 }
+);
+
+$("#hello").waypoint(
+  function() {
+    $(".navbar-nav .nav-item")
+      .children()
+      .removeClass("active");
+    $(".link-hello").addClass("active");
+  },
+  { offset: -1 }
+);
+
+//=========================================
+
+$("#skills").waypoint(
+  function() {
+    $(".to-top").addClass("visible");
+  },
+  { offset: 100 }
+);
+
+$("#hello").waypoint(
+  function() {
+    $(".to-top").removeClass("visible");
+  },
+  { offset: -5 }
+);
+
+$("#toTop").click(function() {
+  $("html, body").animate(
+    {
+      scrollTop: $("#hello").offset().top - 0
+    },
+    1000
+  );
+  return false;
+});

@@ -6478,6 +6478,41 @@ span::after {
 	fill: #e0edf0;
 }
 
+.language ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.language ul li {
+	margin-right: 15px;
+}
+
+.language ul li:last-child {
+	margin-right: 0;
+}
+
+.language ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	color: #6d6b6e;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.language ul li a:hover {
+	background-color: #00d8ff;
+	color: #000;
+}
+
+.language ul li .active {
+	background-color: #6d6b6e;
+	color: #000;
+}
+
 .modal .modal-dialog-centered {
 	width: 540px;
 	height: 418px;
@@ -6731,12 +6766,8 @@ form .btn {
 }
 
 .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-	outline: none;
-	position: relative;
-}
-
-.header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover:after {
-	width: 40px;
+	font-size: 15px;
+	line-height: 21px;
 }
 
 .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .active {
@@ -6769,7 +6800,7 @@ form .btn {
 }
 
 .contact {
-	padding: 145px 0 25px 0;
+	padding: 80px 0 25px 0;
 }
 
 .contact h2 {
@@ -6778,7 +6809,7 @@ form .btn {
 	font-size: 26px;
 	font-weight: 400;
 	text-transform: uppercase;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 }
 
 .contact .contact-box {
@@ -6847,7 +6878,7 @@ form .btn {
 }
 
 .contact .contact-box .contact-box__info ul .fa-telegram::before {
-	background-image: url("../img/telegram.svg");
+	background-image: url("../../img/telegram1.svg");
 }
 
 .contact .contact-box .contact-box__info ul .fa-mobile::before {
@@ -6860,17 +6891,9 @@ form .btn {
 
 .copyright {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	padding: 20px 0;
-}
-
-.copyright .social {
-	flex: 0 0 33.3%;
-}
-
-.copyright p {
-	flex: 0 0 33.3%;
-	text-align: center;
 }
 
 .skills {
@@ -7074,6 +7097,57 @@ form .btn {
 	margin: auto;
 }
 
+.works-item .works-gallery .tab-content .tab-pane .desc-img_works {
+	width: 357px;
+	height: 235px;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50.5%);
+	transform: translateX(-50.5%);
+	top: 40px;
+	z-index: -1;
+}
+
+.works-item .works-gallery .tab-content .tab-pane .desc-img_works img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.works-item .works-gallery .tab-content .tab-pane .tab-img_works {
+	width: 360px;
+	height: 238px;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50.5%);
+	transform: translateX(-50.5%);
+	top: 40px;
+	z-index: -1;
+}
+
+.works-item .works-gallery .tab-content .tab-pane .tab-img_works img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.works-item .works-gallery .tab-content .tab-pane .mob-img_works {
+	width: 128px;
+	height: 203px;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: 54px;
+	z-index: -1;
+}
+
+.works-item .works-gallery .tab-content .tab-pane .mob-img_works img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 .works-item .works-gallery .tab-content .tab-pane .shadow-desc,
 .works-item .works-gallery .tab-content .tab-pane .shadow-tab,
 .works-item .works-gallery .tab-content .tab-pane .shadow-mob {
@@ -7142,6 +7216,41 @@ form .btn {
 	transform: translateY(-50%);
 }
 
+.to-top {
+	border: 3px solid #6d6b6e;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	opacity: 0;
+	transition: all 0.8s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.to-top svg {
+	display: block;
+	width: 30px;
+	height: 30px;
+	fill: #6d6b6e;
+}
+
+.to-top:hover {
+	border: 3px solid #00d8ff;
+}
+
+.to-top:hover svg {
+	fill: #00d8ff;
+}
+
+.visible {
+	opacity: 1;
+}
+
 .wrapper {
 	background-color: #20232a;
 	overflow: hidden;
@@ -7197,6 +7306,12 @@ form .btn {
 	bottom: 20px;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
+}
+
+.section-footer .section-footer-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .skills,

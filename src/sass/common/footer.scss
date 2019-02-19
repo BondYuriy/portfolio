@@ -14,7 +14,7 @@
 }
 
 .contact {
-  padding: 145px 0 25px 0;
+  padding: 80px 0 25px 0;
 
   & h2 {
     color: $text-color;
@@ -22,7 +22,7 @@
     font-size: $h2;
     font-weight: $Regular;
     text-transform: uppercase;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   & .contact-box {
@@ -88,7 +88,7 @@
         }
 
         & .fa-telegram::before {
-          background-image: url("../img/telegram.svg");
+          background-image: url("../../img/telegram1.svg");
         }
 
         & .fa-mobile::before {
@@ -105,15 +105,7 @@
 
 .copyright {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-
-  & .social {
-    flex: 0 0 33.3%;
-  }
-
-  & p {
-    flex: 0 0 33.3%;
-    text-align: center;
-  }
 }

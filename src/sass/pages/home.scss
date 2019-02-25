@@ -8,6 +8,7 @@
   background-image: url("../img/header-bi.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
 
   &::before {
@@ -27,7 +28,6 @@
     & h1 {
       font-family: $Lato;
       margin-bottom: 35px;
-      color: $react;
 
       & span {
         color: $text-color;

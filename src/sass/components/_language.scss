@@ -18,17 +18,15 @@
       text-align: center;
       line-height: 30px;
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 400;
 
       &:hover {
-        background-color: $react;
-        color: #000;
+        color: $react;
       }
     }
 
     & .active {
-      background-color: $no-active;
-      color: #000;
+      color: $active;
     }
   }
 }

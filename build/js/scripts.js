@@ -132,19 +132,6 @@ $(".link-contact").click(function() {
   return false;
 });
 
-/*$('#2').waypoint(function(event, direction) {
-
-  $(".nav-container ul li").children().removeClass("active");
-  $("#s2").addClass("active");
-
-  if (direction === 'down') {
-    offset = 90;
-  }
-  else {
-    offset = 20;
-  }
-});*/
-
 /*
 Using jquery waypoints to change active on scroll
 */
@@ -190,6 +177,18 @@ $("#hello").waypoint(
 
 //=========================================
 
+$(".btn-scroll").click(function() {
+  $("html, body").animate(
+    {
+      scrollTop: $("#works").offset().top - 0
+    },
+    700
+  );
+  return false;
+});
+
+//=========================================
+
 $("#skills").waypoint(
   function() {
     $(".to-top").addClass("visible");
@@ -213,3 +212,15 @@ $("#toTop").click(function() {
   );
   return false;
 });
+
+//============================================
+
+$(".navbar-toggler").click(function() {
+  $(this).toggleClass("open");
+});
+
+//============================================
+
+new WOW().init();
+
+//============================================
